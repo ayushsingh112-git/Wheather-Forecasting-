@@ -1,0 +1,117 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 100vh;
+        }
+        .weather-control {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="weather-control">
+        <select id="weatherLayer">
+            <option value="temp_new">Temperature</option>
+            <option value="wind_new">Wind Speed</option>
+            <option value="clouds_new">Clouds</option>
+        </select>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Weather Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 90vh;
+        }
+        .weather-control {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .info {
+            position: absolute;
+            bottom: 30px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .controls {
+            position: absolute;
+            bottom: 80px;
+            left: 10px;
+            z-index: 1000;
+            background: white;
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.3);
+        }
+        .leaflet-tooltip {
+            background-color: white;
+            border-radius: 3px;
+            box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+            padding: 2px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+    <div id="map"></div>
+    <div class="weather-control">
+        <select id="weatherLayer">
+            <option value="temp_new">Temperature</option>
+            <option value="wind_new">Wind Speed</option>
+            <option value="clouds_new">Clouds</option>
+            <option value="precipitation_new">Rain</option>
+            <option value="thunderstorm">Thunderstorm</option>
+        </select>
+    </div>
+    <div class="info" id="info">Click on a state</div>
+    <div class="controls">
+        <button id="startAnimation">Start Animation</button>
+        <button id="stopAnimation">Stop Animation</button>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="graph.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
